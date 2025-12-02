@@ -8,11 +8,11 @@ The system captures image data from an OV7670 camera, stores frames into SDRAM, 
 - SDRAM controller operating at **133 MHz** (256 burst length customization).
 - Dual-pipeline processing:
   - Camera → SDRAM → VGA
-  - Camera → Chroma Keying → RAM 2 port Final (Storing the result of chroma keying process) → VGA
+  - Camera → Chroma Keying → RAM 2 port Final → VGA
 - Designed for **DE10 Cyclone V** platforms.
 
 ## 🏗 System Architecture
-Camera → FIFO → RGB Converter → Grayscale → 3-Line Buffer → Sobel
+Camera → FIFO → RGB Converter → Chroma Keying → RAM 2 port Final (Storing the result of chroma keying process)
 ↓ ↑
 SDRAM Write ←→ SDRAM Controller ←→ SDRAM Read
 ↓
@@ -42,8 +42,7 @@ Includes tests for:
 
 ## 📝 Notes
 - SDRAM runs at **133 MHz (CL2)** depending on configuration.  
-- Supports switching between raw camera feed and Sobel mode.  
-- DDR3 version for Zynq-7020 uses **AXI HP port** for high-speed frame transfer.
+- Supports switching between raw camera feed and Chroma mode.  
 
 ## 📜 License
 None

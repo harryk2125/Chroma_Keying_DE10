@@ -45,7 +45,7 @@ Includes tests for:
 - Supports switching between raw camera feed and Chroma mode.  
 
 ## 📜 License
-None
+MIT License
 
 ## ✨ Author
 **Huy Nguyen Gia** – Graduated Electronics Engineering Student  

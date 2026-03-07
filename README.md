@@ -48,5 +48,5 @@ Includes tests for:
 MIT License
 
 ## ✨ Author
-**Huy Nguyen Gia** – Graduated Electronics Engineering Student  
-Specialized in FPGA, digital design, and real-time video systems.
+**Huy Nguyen Gia** – Recent Electronics and Telecommunications graduate.
+Specialized in RTL Design, Verification, Image Processing and Computer Vision.
